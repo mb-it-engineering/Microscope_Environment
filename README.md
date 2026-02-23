@@ -1,4 +1,4 @@
-Microscope Environment
+**Microscope Environment**
 A simulated microscope environment where an LLM Agent autonomously optimizes microscope parameters to enhance cell image quality. Can also be used as a standalone MCP Server connectable to any local LLM.
 What it does
 
