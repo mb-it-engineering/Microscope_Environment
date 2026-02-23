@@ -1,0 +1,17 @@
+services:
+  server:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_MODE=server
+
+  full:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_MODE=full
+      - OLLAMA_HOST=http://host.docker.internal:11434
+    profiles:
+      - full

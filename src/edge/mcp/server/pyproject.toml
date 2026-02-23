@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edge-mcp-server"
+version = "0.1.0"
+description = "Edge MCP Server"
+requires-python = ">=3.9"
+dependencies = [
+    "mcp[cli]",
+    "requests"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "httpx",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
