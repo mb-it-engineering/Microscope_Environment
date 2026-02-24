@@ -51,7 +51,7 @@ docker-compose build server
   "mcpServers": {
     "microscope-simulation-server": {
       "command": "docker",
-      "args": [run", "--rm", "-i", "ki_inference-server", "python3", "src/edge/mcp/server/mcp_server_microscope_env.py"]
+      "args": [run", "--rm", "-i", "ki_inference-server"]
     }
   }
 }
