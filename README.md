@@ -24,7 +24,7 @@
 
 ---
 
-## How To (Docker)
+## How To - AI Agent
 
 ### A. With Ollama LLM
 
