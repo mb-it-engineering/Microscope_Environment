@@ -58,3 +58,11 @@ docker-compose build server
 ```
 
 **4.** Use Claude Desktop to start optimization of the microscope environment.
+
+## How To - Ruled based controller & plot
+
+**1. Start the controller:**
+```bash
+python <repository>/src/edge/simulation/ruled_based_controller.py
+```
+
