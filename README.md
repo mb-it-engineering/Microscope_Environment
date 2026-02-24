@@ -40,7 +40,7 @@ The `llm-agent` executes 15 iterations, autonomously optimizing the microscope e
 
 **1. Start the server:**
 ```bash
-docker-compose up --build server
+docker-compose build server
 ```
 
 **2. Open Claude Desktop**
@@ -50,8 +50,8 @@ docker-compose up --build server
 {
   "mcpServers": {
     "microscope-simulation-server": {
-      "command": "<repository>/.venv-3.12/bin/python3",
-      "args": ["<repository>/src/edge/mcp/server/mcp_server_microscope_env.py"]
+      "command": "docker",
+      "args": [run", "--rm", "-i", "ki_inference-server", "python3", "src/edge/mcp/server/mcp_server_microscope_env.py"]
     }
   }
 }
