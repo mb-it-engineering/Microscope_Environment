@@ -28,12 +28,14 @@ dev = [
 
 [project.scripts]
 edge-llm = "edge.llm.llm:main"
+mcp-server = "edge.mcp.server.mcp_server_microscope_env:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
 
 [tool.setuptools.package-data]
 "edge.llm" = ["*.md"]
+"edge.mcp.server" = ["*.md"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

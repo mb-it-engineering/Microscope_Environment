@@ -51,3 +51,6 @@ async def reset():
 
 if __name__ == "__main__":
     mcp.run(transport="stdio")
+
+def main():
+    mcp.run(transport="stdio")
